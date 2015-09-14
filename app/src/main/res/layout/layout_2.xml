@@ -11,28 +11,28 @@
         android:id="@+id/top_square"
         android:layout_width="200dip"
         android:layout_height="200dip"
-        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/foo"/>
+    <View
+        android:id="@+id/mid_square"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:background="@color/foo"/>
     <View
         android:id="@+id/tl_square"
         android:layout_width="200dip"
         android:layout_height="200dip"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
+        android:layout_above="@id/mid_square"
+        android:layout_toLeftOf="@id/mid_square"
         android:background="@color/foo"/>
     <View
-        android:id="@+id/tl_square"
+        android:id="@+id/br_square"
         android:layout_width="200dip"
         android:layout_height="200dip"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:background="@color/foo"/>
-    <View
-        android:id="@+id/tl_square"
-        android:layout_width="200dip"
-        android:layout_height="200dip"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
+        android:layout_below="@id/mid_square"
+        android:layout_toRightOf="@id/mid_square"
         android:background="@color/foo"/>
 </RelativeLayout>
